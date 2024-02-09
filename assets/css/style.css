@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+
+/* Main view setup*/
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-image: url(https://img.freepik.com/free-vector/space-illustration-night-alien-fantasy-landscape_33099-1873.jpg?w=1380&t=st=1707489981~exp=1707490581~hmac=aa59348ac8dbfd168b2f2462b68ef50c6713b257e15a047e33d33adc7cd807d4);
+    font-family: 'Handlee';
+    color: #fff;
+    margin: 0;
+}
+
+/* Header and footer */
+
+header {
+    text-align: center;
+    height: 50px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding-top: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #7a7676;
+}
+
+/* Game area */
+
+.game-area {
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+.control {
+    display: inline-block;
+    margin: 2px;
+    width: 80px;
+    height: 40px;
+}
+
+#messages {
+    height: 20px;
+}
+
+.player {
+    background-color: #afe6ad;
+    float: left;
+    width: 45%;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+.computer {
+    background-color: #672fd9;
+    float: right;
+    width: 45%;
+}

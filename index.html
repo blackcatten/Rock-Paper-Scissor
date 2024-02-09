@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rock-Paper-Scissor</title>
+</head>
+<body>
+    <header>
+        <h2>Rock Paper Scissor</h2>
+    </header>
+    <section class="game-area">
+        <div>
+            <p>Make a choice:</p>
+            <button aria-label="stone" data-choice="0">Rock</button>
+            <button aria-label="paper" data-choice="1">Paper</button>
+            <button aria-label="scissor" data-choice="2">Scissor</button>
+        </div>
+        <div class="player">
+            <h3 class="scores">Player score:<span id="player-score">0</span></h3>
+            <img  id="image-rock" src="assets/images/rock.jpg" alt="rock">
+            <img  id="image-paper" src="assets/images/paper.jpg" alt="paper">
+            <img  id="image-scissor" src="assets/images/scissor.jpg" alt="scissor">
+        </div>
+        <div class="computer">
+            <h3 class="scores">Computer score:<span id="computer-score">0</span></h3>
+            <img id="image-rock" src="assets/images/rock.jpg" alt="rock">
+            <img id="image-paper" src="assets/images/paper.jpg" alt="paper">
+            <img id="image-scissor" src="assets/images/scissor.jpg" alt="scissor">
+        </div>
+    </section>
+    <footer>
+        <h3>Rules</h3>
+        <p>Scissor cut Paper | Paper covers Stone | Stone blunts Scissor</p>
+    </footer>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
