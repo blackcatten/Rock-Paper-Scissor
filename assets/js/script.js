@@ -60,3 +60,40 @@ function updateScore(playerChoice, computerChoice) {
         computerScore = 0;
     }
 }
+function playerWinner(winner) {
+    var modal = document.getElementById('myModal');
+    var modalContent = document.querySelector('.modal-content p');
+    modalContent.innerText = 'Congratulations you won!';
+    modal.style.display = 'block';
+
+    var span = document.getElementsByClassName('close')[0];
+
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    }
+}
+
+function computerWinner(winner) {
+    var modal = document.getElementById('myModal');
+    var modalContent = document.querySelector('.modal-content p');
+    modalContent.innerText ='Computer won! You Lost!';
+    modal.style.display = 'block';
+
+    var span = document.getElementsByClassName('close')[0];
+
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    }
+}
