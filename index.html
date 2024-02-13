@@ -5,35 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Rock-Paper-Scissor</title>
+    <title>Rock-Paper-Scissors</title>
 </head>
 <body>
     <header>
-        <h2>Rock Paper Scissor</h2>
+        <h2>Rock Paper Scissors</h2>
     </header>
     <section class="game-area">
         <div>
             <p>Make a choice:</p>
             <button aria-label="rock" data-choice="0" onclick="showImage(0)">Rock</button>
             <button aria-label="paper" data-choice="1" onclick="showImage(1)">Paper</button>
-            <button aria-label="scissor" data-choice="2" onclick="showImage(2)">Scissor</button>
+            <button aria-label="scissors" data-choice="2" onclick="showImage(2)">Scissors</button>
         </div>
         <div class="player">
             <h3 class="scores">Player score:<span id="player-score">0</span></h3>
             <img  id="image-rock" src="assets/images/rock.jpg" alt="rock">
             <img  id="image-paper" src="assets/images/paper.jpg" alt="paper">
-            <img  id="image-scissor" src="assets/images/scissor.jpg" alt="scissor">
+            <img  id="image-scissors" src="assets/images/scissors.jpg" alt="scissor">
         </div>
         <div class="computer">
             <h3 class="scores">Computer score:<span id="computer-score">0</span></h3>
             <img id="computer-image-rock" src="assets/images/rock.jpg" alt="rock">
             <img id="computer-image-paper" src="assets/images/paper.jpg" alt="paper">
-            <img id="computer-image-scissor" src="assets/images/scissor.jpg" alt="scissor">
+            <img id="computer-image-scissors" src="assets/images/scissors.jpg" alt="scissors">
         </div>
     </section>
     <footer>
         <h3>Rules</h3>
-        <p>Scissor cut Paper | Paper covers Stone | Stone blunts Scissor</p>
+        <p>Scissors cut Paper | Paper covers Stone | Stone blunts Scissors</p>
     </footer>
     
     <script src="assets/js/script.js"></script>
