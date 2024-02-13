@@ -6,32 +6,24 @@ const imageIds = {
 var playerScore = 0;
 var computerScore = 0;
 
-function showImage(choice) {
-    document.getElementById('image-rock').style.display = 'none';
-    document.getElementById('image-paper').style.display = 'none';
-    document.getElementById('image-scissors').style.display = 'none';
+function hideAllImages(images) {
+    images.forEach(image => {
+        document.getElementById(image).style.display = 'none';
+    });
+}
 
-    if (choice === 0) {
-        document.getElementById('image-rock').style.display = 'block';
-    } else if (choice === 1) {
-        document.getElementById('image-paper').style.display = 'block';
-    } else if (choice === 2) {
-        document.getElementById('image-scissors').style.display = 'block';
-    }
-    var computerChoice = Math.floor(Math.random() * 3);
+function showImage(choice, role) {
+    hideAllImages(imageIds[role]);
+    document.getElementById(imageIds[role][choice]).style.display = 'block';
+}
 
-    document.getElementById('computer-image-rock').style.display = 'none';
-    document.getElementById('computer-image-paper').style.display = 'none';
-    document.getElementById('computer-image-scissors').style.display = 'none';
+function startGame(playerChoice) {
+    showImage(playerChoice, 'player');
 
-    if (computerChoice === 0) {
-        document.getElementById('computer-image-rock').style.display = 'block';
-    } else if (computerChoice === 1) {
-        document.getElementById('computer-image-paper').style.display = 'block';
-    } else if (computerChoice === 2) {
-        document.getElementById('computer-image-scissors').style.display = 'block';
-    }
-    updateScore(choice, computerChoice);
+    const computerChoice = Math.floor(Math.random() * 3);
+    showImage(computerChoice, 'computer');
+
+    updateScore(playerChoice, computerChoice);
 }
 
 function updateScore(playerChoice, computerChoice) {
