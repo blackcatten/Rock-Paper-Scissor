@@ -1,4 +1,8 @@
 const choices = ["rock", "paper", "scissors"]
+const imageIds = {
+    player: ['image-rock', 'image-paper', 'image-scissors'],
+    computer: ['computer-image-rock', 'computer-image-paper', 'computer-image-scissors']
+};
 var playerScore = 0;
 var computerScore = 0;
 
