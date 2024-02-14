@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll("[data-choice]");
+const buttons = document.getElementsByClassName("command");
 const playerScoreDisplay = document.getElementById("player-score");
 const computerScoreDisplay = document.getElementById("computer-score");
 const playerImages = {
@@ -80,13 +80,13 @@ function checkWinner(computerChoice, playerChoice) {
         (playerChoice === 'scissors' && computerChoice === 'paper') ||
         (playerChoice === 'paper' && computerChoice === 'rock')
     ) {
-        return 'player';
+        playerScore++;
     } else if (
         (computerChoice === 'rock' && playerChoice === 'scissors') ||
         (computerChoice === 'scissors' && playerChoice === 'paper') ||
         (computerChoice === 'paper' && playerChoice === 'rock')
     ) {
-        return 'computer';
+        computerScore++;
     }
 }
 function playerWinner(winner) {
