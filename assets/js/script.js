@@ -16,15 +16,11 @@ const choices = ["rock", "paper", "scissors"];
 var playerScore = 0;
 var computerScore = 0;
 
-function hideAllImages(images) {
-    images.forEach(image => {
-        document.getElementById(image).style.display = 'none';
+for (let button of buttons) {
+    button.addEventListener("click", function () {
+        let playerChoice = this.getAttribute("data-choice");
+        playGame(playerChoice);
     });
-}
-
-function showImage(choice, role) {
-    hideAllImages(imageIds[role]);
-    document.getElementById(imageIds[role][choice]).style.display = 'block';
 }
 
 function startGame(playerChoice) {
