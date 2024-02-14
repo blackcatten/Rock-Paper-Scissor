@@ -16,31 +16,33 @@ const choices = ["rock", "paper", "scissors"];
 var playerScore = 0;
 var computerScore = 0;
 
-for (let button of buttons) {
-    button.addEventListener("click", function () {
-        let playerChoice = this.getAttribute("data-choice");
-        console.log("Player choice:", playerChoice);
-        playGame(playerChoice);
-    });
-}
+function showImage(choice) {
+    document.getElementById('image-rock').style.display = 'none';
+    document.getElementById('image-paper').style.display = 'none';
+    document.getElementById('image-scissors').style.display = 'none';
 
-function playGame(playerChoice) {
-    let computerChoice = Math.floor(Math.random() * 3);
-
-    playerImages[playerChoice].style.display = "block";
-    computerImages[choices[computerChoice]].style.display = "block";
-
-    for (let choice of choices) {
-        if (choice !== playerChoice) {
-            playerImages[choice].style.display = "none";
-        }
-        if (choice !== choices[computerChoice]) {
-            computerImages[choice].style.display = "none";
-        }
+    if (choice === 0) {
+        document.getElementById('image-rock').style.display = 'block';
+    } else if (choice === 1) {
+        document.getElementById('image-paper').style.display = 'block';
+    } else if (choice === 2) {
+        document.getElementById('image-scissors').style.display = 'block';
     }
 
-    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
-    updateScore(result);
+    var computerChoice = Math.floor(Math.random() * 3);
+
+    document.getElementById('computer-image-rock').style.display = 'none';
+    document.getElementById('computer-image-paper').style.display = 'none';
+    document.getElementById('computer-image-scissors').style.display = 'none';
+
+    if (computerChoice === 0) {
+        document.getElementById('computer-image-rock').style.display = 'block';
+    } else if (computerChoice === 1) {
+        document.getElementById('computer-image-paper').style.display = 'block';
+    } else if (computerChoice === 2) {
+        document.getElementById('computer-image-scissors').style.display = 'block';
+    }
+    updateScore(choice, computerChoice);
 }
 
 function updateScore(playerChoice, computerChoice) {
