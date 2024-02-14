@@ -23,13 +23,23 @@ for (let button of buttons) {
     });
 }
 
-function startGame(playerChoice) {
-    showImage(playerChoice, 'player');
+function playGame(playerChoice) {
+    let computerChoice = Math.floor(Math.random() * 3);
 
-    const computerChoice = Math.floor(Math.random() * 3);
-    showImage(computerChoice, 'computer');
+    playerImages[playerChoice].style.display = "block";
+    computerImages[choices[computerChoice]].style.display = "block";
 
-    updateScore(playerChoice, computerChoice);
+    for (let choice of choices) {
+        if (choice !== playerChoice) {
+            playerImages[choice].style.display = "none";
+        }
+        if (choice !== choices[computerChoice]) {
+            computerImages[choice].style.display = "none";
+        }
+    }
+
+    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
+    updateScores(result);
 }
 
 function updateScore(playerChoice, computerChoice) {
@@ -60,7 +70,7 @@ function updateScore(playerChoice, computerChoice) {
         
         playerScore = 0;
         computerScore = 0;
-    }
+    };
 }
 function playerWinner(winner) {
     var modal = document.getElementById('myModal');
@@ -78,7 +88,7 @@ function playerWinner(winner) {
         if (event.target === modal) {
             modal.style.display = 'none';
         }
-    }
+    };
 }
 
 function computerWinner(winner) {
@@ -97,5 +107,5 @@ function computerWinner(winner) {
         if (event.target === modal) {
             modal.style.display = 'none';
         }
-    }
+    };
 }
