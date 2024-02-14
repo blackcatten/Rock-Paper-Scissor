@@ -1,8 +1,18 @@
-const choices = ["rock", "paper", "scissors"]
-const imageIds = {
-    player: ['image-rock', 'image-paper', 'image-scissors'],
-    computer: ['computer-image-rock', 'computer-image-paper', 'computer-image-scissors']
+const buttons = document.querySelectorAll("[data-choice]");
+const playerScoreDisplay = document.getElementById("player-score");
+const computerScoreDisplay = document.getElementById("computer-score");
+const playerImages = {
+    rock: document.getElementById("image-rock"),
+    paper: document.getElementById("image-paper"),
+    scissors: document.getElementById("image-scissors")
 };
+const computerImages = {
+    rock: document.getElementById("computer-image-rock"),
+    paper: document.getElementById("computer-image-paper"),
+    scissors: document.getElementById("computer-image-scissors")
+};
+const choices = ["rock", "paper", "scissors"];
+
 var playerScore = 0;
 var computerScore = 0;
 
