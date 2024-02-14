@@ -19,6 +19,7 @@ var computerScore = 0;
 for (let button of buttons) {
     button.addEventListener("click", function () {
         let playerChoice = this.getAttribute("data-choice");
+        console.log("Player choice:", playerChoice);
         playGame(playerChoice);
     });
 }
@@ -70,7 +71,7 @@ function updateScore(playerChoice, computerChoice) {
         
         playerScore = 0;
         computerScore = 0;
-    };
+    }
 }
 
 function checkWinner(computerChoice, playerChoice) {
@@ -87,6 +88,7 @@ function checkWinner(computerChoice, playerChoice) {
     ) {
         return 'computer';
     }
+}
 function playerWinner(winner) {
     var modal = document.getElementById('myModal');
     var modalContent = document.querySelector('.modal-content p');
@@ -97,7 +99,7 @@ function playerWinner(winner) {
 
     span.onclick = function() {
         modal.style.display = 'none';
-    }
+    };
 
     window.onclick = function(event) {
         if (event.target === modal) {
@@ -116,7 +118,7 @@ function computerWinner(winner) {
 
     span.onclick = function() {
         modal.style.display = 'none';
-    }
+    };
 
     window.onclick = function(event) {
         if (event.target === modal) {
