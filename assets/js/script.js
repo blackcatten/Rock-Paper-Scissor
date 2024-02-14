@@ -1,4 +1,4 @@
-const buttons = document.getElementsByClassName("command");
+const buttons = document.querySelector("showImage")
 const playerScoreDisplay = document.getElementById("player-score");
 const computerScoreDisplay = document.getElementById("computer-score");
 const playerImages = {
