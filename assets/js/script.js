@@ -1,4 +1,4 @@
-const buttons = document.querySelector("showImage")
+const buttons = document.querySelector("showImage");
 const playerScoreDisplay = document.getElementById("player-score");
 const computerScoreDisplay = document.getElementById("computer-score");
 const playerImages = {
@@ -13,8 +13,8 @@ const computerImages = {
 };
 const choices = ["rock", "paper", "scissors"];
 
-var playerScore = 0;
-var computerScore = 0;
+let playerScore = 0;
+let computerScore = 0;
 
 function showImage(choice) {
     document.getElementById('image-rock').style.display = 'none';
