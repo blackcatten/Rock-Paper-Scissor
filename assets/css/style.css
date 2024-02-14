@@ -9,7 +9,9 @@ html {
 }
 
 body {
-    background-image: url(https://img.freepik.com/free-vector/space-illustration-night-alien-fantasy-landscape_33099-1873.jpg?w=1380&t=st=1707489981~exp=1707490581~hmac=aa59348ac8dbfd168b2f2462b68ef50c6713b257e15a047e33d33adc7cd807d4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('assets/images/background-image.jpg');
     font-family: 'Handlee';
     color: #fff;
     margin: 0;
