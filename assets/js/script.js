@@ -39,7 +39,7 @@ function playGame(playerChoice) {
     }
 
     let result = checkWinner(choices[computerChoice], choices[playerChoice]);
-    updateScores(result);
+    updateScore(result);
 }
 
 function updateScore(playerChoice, computerChoice) {
@@ -72,6 +72,21 @@ function updateScore(playerChoice, computerChoice) {
         computerScore = 0;
     };
 }
+
+function checkWinner(computerChoice, playerChoice) {
+    if (
+        (playerChoice === 'rock' && computerChoice === 'scissors') ||
+        (playerChoice === 'scissors' && computerChoice === 'paper') ||
+        (playerChoice === 'paper' && computerChoice === 'rock')
+    ) {
+        return 'player';
+    } else if (
+        (computerChoice === 'rock' && playerChoice === 'scissors') ||
+        (computerChoice === 'scissors' && playerChoice === 'paper') ||
+        (computerChoice === 'paper' && playerChoice === 'rock')
+    ) {
+        return 'computer';
+    }
 function playerWinner(winner) {
     var modal = document.getElementById('myModal');
     var modalContent = document.querySelector('.modal-content p');
