@@ -29,7 +29,7 @@ function showImage(choice) {
         document.getElementById('image-scissors').style.display = 'block';
     }
 
-    var computerChoice = Math.floor(Math.random() * 3);
+    let computerChoice = Math.floor(Math.random() * 3);
 
     document.getElementById('computer-image-rock').style.display = 'none';
     document.getElementById('computer-image-paper').style.display = 'none';
@@ -92,12 +92,12 @@ function checkWinner(computerChoice, playerChoice) {
     }
 }
 function playerWinner(winner) {
-    var modal = document.getElementById('myModal');
-    var modalContent = document.querySelector('.modal-content p');
+    let modal = document.getElementById('myModal');
+    let modalContent = document.querySelector('.modal-content p');
     modalContent.innerText = 'Congratulations you won!';
     modal.style.display = 'block';
 
-    var span = document.getElementsByClassName('close')[0];
+    let span = document.getElementsByClassName('close')[0];
 
     span.onclick = function() {
         modal.style.display = 'none';
@@ -111,12 +111,12 @@ function playerWinner(winner) {
 }
 
 function computerWinner(winner) {
-    var modal = document.getElementById('myModal');
-    var modalContent = document.querySelector('.modal-content p');
+    let modal = document.getElementById('myModal');
+    let modalContent = document.querySelector('.modal-content p');
     modalContent.innerText ='Computer won! You Lost!';
     modal.style.display = 'block';
 
-    var span = document.getElementsByClassName('close')[0];
+    let span = document.getElementsByClassName('close')[0];
 
     span.onclick = function() {
         modal.style.display = 'none';
