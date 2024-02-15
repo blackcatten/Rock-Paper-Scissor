@@ -46,6 +46,12 @@ footer {
     margin-right: auto;
     margin-top: 1%;
 }
+button {
+    color: #fff;
+    background-color: deeppink;
+    width: 5em;
+    height: 3em;
+}
 
 .control {
     display: inline-block;
