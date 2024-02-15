@@ -22,7 +22,12 @@ The user should be able to:
 ### Color:
 
 ### Wireframe:
-
+Desktop homepage
+![desktop-homepage](assets/images/wireframe-desktop-pp2.jpg)
+Ipad homepage
+![ipad-homepage](assets/images/wireframe-ipad-pp2.jpg)
+Mobile homepage
+![mobile-homepage](assets/images/wireframe-mobile-pp2.jpg)
 ## Testing:
 1. Validator index.html-pass:
 ![result](assets/images/validator-html.jpeg)
