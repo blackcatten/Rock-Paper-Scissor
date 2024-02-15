@@ -16,6 +16,11 @@ const choices = ["rock", "paper", "scissors"];
 let playerScore = 0;
 let computerScore = 0;
 
+/**
+ * This function showImage is responsible for hiding, showing image and 
+ * calls the updatingScore method.
+ * @param: choice this is a number that refers to the player chioce.
+ */
 function showImage(choice) {
     document.getElementById('image-rock').style.display = 'none';
     document.getElementById('image-paper').style.display = 'none';
@@ -28,6 +33,11 @@ function showImage(choice) {
     } else if (choice === 2) {
         document.getElementById('image-scissors').style.display = 'block';
     }
+/** 
+ * This function for the computer to select images at random.                            
+ * The image appears after the computer has selected one of them. 
+ * @param: computerChoice this is a number that refers to the computer chioce.
+ */ 
 
     let computerChoice = Math.floor(Math.random() * 3);
 
@@ -45,6 +55,11 @@ function showImage(choice) {
     updateScore(choice, computerChoice);
 }
 
+/**
+ * @param {number} playerChoice - Player's choice (0 for rock, 1 for paper, 2 for scissors).
+ * @param {number} computerChoice - Computer's choice (0 for rock, 1 for paper, 2 for scissors).
+ * computerScore and playerScore are used to show points.
+ */
 function updateScore(playerChoice, computerChoice) {
     if (
         (playerChoice === 0 && computerChoice === 2) ||
@@ -76,6 +91,9 @@ function updateScore(playerChoice, computerChoice) {
     }
 }
 
+/**
+ * This function declares which image wins.  
+ */
 function checkWinner(computerChoice, playerChoice) {
     if (
         (playerChoice === 'rock' && computerChoice === 'scissors') ||
@@ -91,6 +109,10 @@ function checkWinner(computerChoice, playerChoice) {
         computerScore++;
     }
 }
+
+/**
+ * The funktion displays a message when the player wins.
+ */
 function playerWinner(winner) {
     let modal = document.getElementById('myModal');
     let modalContent = document.querySelector('.modal-content p');
@@ -110,6 +132,9 @@ function playerWinner(winner) {
     };
 }
 
+/**
+ * The funktion displays a message when the computer wins.
+ */
 function computerWinner(winner) {
     let modal = document.getElementById('myModal');
     let modalContent = document.querySelector('.modal-content p');
