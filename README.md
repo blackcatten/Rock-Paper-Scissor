@@ -7,9 +7,13 @@
 The user should be able to:
 
 1. Read what the game is called.
-2. Choose between 3 buttons.
-3. Read the rules at the bottom of the footer.
-4. Check which buttons belong to which image.
+2. Read the rules at the bottom of the footer.
+3. Choose between 3 buttons. 
+4. Check which buttons belong to which image
+5. Play the game Rock-Paper-Scissors.
+6. See how many pionts he/she have.
+7. Get a winner or loose modal.
+8. Start the game over again.
 
 ## Features: 
 
@@ -44,9 +48,27 @@ Mobile homepage
 ![desctop](assets/images/lighthouse-desktop-pp2.png) 
 ![mobile](assets/images/lighthouse-mobile-pp2.png)
 
-### User Story Testing:
-
 ## Manual Testing:
+
+### User Story Testing:
+The user should be able to:
+
+1. Read what the game is called.
+    - By entering the website, the user can see the text clearly at the top.
+2. Read the rules at the bottom of the footer.
+    - By looking at the bottom of the footer, the user clearly sees how to play.
+3. Choose between 3 buttons. 
+    - By clicking on the 3 pink buttons that say Rock, Paper and scissors, yothe user can use these.
+4. Check which buttons belong to which image.
+    - By clicking on these buttons, the user get the correct image and see that it is correct.
+5. Play the game Rock-Paper-Scissors.
+    - By the user playing against the computer first to 3 points, the user has participated in the game.
+6. See how many pionts the user have.
+    - When the user participates in the game, the user sees that the score is in his box "Players score".
+7. Get a winner or loose modal.
+    - When the user or the computer has received 3 points, the user receives a message in modal that it has won or lost.
+8. Start the game over again.
+    - By clicking the X in the modal, the user has a chance to play one more time.
 
 ## Known Bugs:
 
