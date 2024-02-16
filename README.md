@@ -16,7 +16,7 @@ The user should be able to:
 3. Choose between 3 buttons. 
 4. Check which buttons belong to which image
 5. Play the game Rock-Paper-Scissors.
-6. See how many pionts he/she have.
+6. See how many points he/she have.
 7. Get a winner or loose modal.
 8. Start the game over again.
 
@@ -127,3 +127,4 @@ The user should be able to:
 - [Rock, paper and scissors image](https://img.freepik.com/free-vector/cartoon-hands-gloves-set_74855-6286.jpg?w=1380&t=st=1707941637~exp=1707942237~hmac=9bf5c9ded66073e821d892ed91e1c35fd8ff66d197c0db96f9241141a761eb03)
 
 ## Acknowledgements:
+- Special thanks to my mentor who showed me very useful comments in javascript and helped me with good information about var, let and const.
