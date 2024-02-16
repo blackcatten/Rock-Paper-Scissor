@@ -81,6 +81,8 @@ The user should be able to:
 
 ## Known Bugs:
 
+Currently no known bugs.
+
 ## Deployment:
 
 -The site was redirected to the GitHub pages. The steps to be passed are as follows:
