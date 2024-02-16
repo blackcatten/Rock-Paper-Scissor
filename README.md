@@ -1,6 +1,9 @@
 # Rock-Paper-Scisssor Game:
 
 [My live project](https://blackcatten.github.io/Rock-Paper-Scissor/)
+
+![responsive](assets/images/responsive-pp2.png)
+
 ## Features: 
 
 ### User Experience (UX):
@@ -87,8 +90,6 @@ The user should be able to:
 ### Frameworks, Libraries and Programs Used:
 
 ## Credits:
-
-### Contents:
 
 ### Code:
 
