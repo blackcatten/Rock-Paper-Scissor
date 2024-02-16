@@ -1,7 +1,9 @@
 # Rock-Paper-Scisssor Game:
 
 [My live project](https://blackcatten.github.io/Rock-Paper-Scissor/)
-## User Experience (UX):
+## Features: 
+
+### User Experience (UX):
 
 ### User Stories:
 The user should be able to:
@@ -15,13 +17,11 @@ The user should be able to:
 7. Get a winner or loose modal.
 8. Start the game over again.
 
-## Features: 
-
-### Existing Features:
-
-## Typography:
-
 ## Design:
+
+![game-area](assets/images/game-area.png)
+![game-area2](assets/images/game-area2.png)
+![game-area](assets/images/game-area3.png)
 
 ### Color:
 
@@ -77,6 +77,10 @@ The user should be able to:
 ## Technologies Used:
 
 ### Languages Used:
+
+[HTML](https://sv.wikipedia.org/wiki/HTML)
+[CSS](https://en.wikipedia.org/wiki/CSS)
+[javascript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries and Programs Used:
 
