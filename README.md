@@ -22,6 +22,8 @@ The user should be able to:
 ![game-area](assets/images/game-area.png)
 ![game-area2](assets/images/game-area2.png)
 ![game-area](assets/images/game-area3.png)
+![game-area](assets/images/game-area-loose.png)
+![game-area](assets/images/game-area-win.png)
 
 ### Color:
 
