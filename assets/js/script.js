@@ -19,7 +19,9 @@ let computerScore = 0;
 /**
  * This function showImage is responsible for hiding, showing image and 
  * calls the updatingScore method.
- * @param: choice this is a number that refers to the player chioce.
+ * @param: {choice} this is a number that refers to the player chioce.
+ * @param: {(Math.random() * 3)} for the computer to select images at random.                            
+ * @param: {computerChoice} this is a number that refers to the computer chioce.
  */
 function showImage(choice) {
     document.getElementById('image-rock').style.display = 'none';
@@ -33,11 +35,6 @@ function showImage(choice) {
     } else if (choice === 2) {
         document.getElementById('image-scissors').style.display = 'block';
     }
-/** 
- * This function for the computer to select images at random.                            
- * The image appears after the computer has selected one of them. 
- * @param: computerChoice this is a number that refers to the computer chioce.
- */ 
 
     let computerChoice = Math.floor(Math.random() * 3);
 

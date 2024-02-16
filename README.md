@@ -30,6 +30,10 @@ The user should be able to:
 
 ### Color:
 
+Space theme with darker colors on the background and that they match each other.
+
+![color-adobe](assets/images/color-adobe.png)
+
 ### Wireframe:
 Desktop homepage
 ![desktop-homepage](assets/images/wireframe-desktop-pp2.jpg)
@@ -79,15 +83,29 @@ The user should be able to:
 
 ## Deployment:
 
+-The site was redirected to the GitHub pages. The steps to be passed are as follows:
+
+   - In the GitHub repository, navigate to the Settings tab.
+   - Select Pages on the tab in the sidebar on the left.
+   - Final syllable select head under branch.
+   - Press the Save button.
+   - The page has been renewed.
+   - You can find the live link on this page - https://blackcatten.github.io/Rock-Paper-Scissor/
+
 ## Technologies Used:
 
 ### Languages Used:
 
-[HTML](https://sv.wikipedia.org/wiki/HTML)
-[CSS](https://en.wikipedia.org/wiki/CSS)
-[javascript](https://en.wikipedia.org/wiki/JavaScript)
+- [HTML](https://sv.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [javascript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries and Programs Used:
+
+- [Google Fonts](https://fonts.google.com/) was used to import 'Borel'and 'Farsan' that have been used for each page.
+- Git was used by utilising the [Gitpod](https://gitpod.io/workspaces) terminal to commit to Git and Push to GitHub.
+- [GitHub](https://github.com/blackcatten) was used as a repository for code of the project.
+- [Color adobe](https://color.adobe.com/sv/create/image).
 
 ## Credits:
 
