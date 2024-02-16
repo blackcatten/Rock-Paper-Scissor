@@ -57,6 +57,8 @@ Mobile homepage
 ![desctop](assets/images/lighthouse-desktop-pp2.png) 
 ![mobile](assets/images/lighthouse-mobile-pp2.png)
 
+- It has been tested on all sizes (ipad desktop, smasung a34 and samsung galaxy s21) and it works well without problems.
+
 ## Manual Testing:
 
 ### User Story Testing:
